@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fafafa;
+    color: #212121;
+    line-height: 1.5;
+  }
+
+
+/* Kategoriler için genel stil */
+#categories {
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 392px; /* Kategori kutularının genişliği */
+}
+
+/* Her kategori için stil */
+#categories .item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 8px;
+  background-color: #F6F6FE;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Başlık stilleri */
+#categories .item h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin: 0;
+}
+
+/* Liste stilleri */
+#categories .item ul {
+  width: 360px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Liste elemanları */
+#categories .item li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #808080; 
+  padding: 8px;
+  border-radius: 4px; 
+}
+
+/* Bağlantı (Go back) için stil */
+p a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #2e2f42;
+  margin-left: 20px;
+}
+p a:hover {
+  text-decoration: underline;
+}
+
+
+  /* TASK-2 */
+
+  ul.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-width: 1128px;
+    gap: 20px; 
+  }
+  
+  ul.gallery li {
+    flex: 0 0 30%;;
+  }
+  
+  ul.gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Task 3*/
+#name-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px;
+  gap: 16px;
+  position: relative;
+  width: 408px;
+  background: #FFFFFF;
+  border-radius: 2px;
+}
+
+#name-input input {
+  width: 360px;
+  height: 40px;
+  padding: 8px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #2E2F42;
+  box-sizing: border-box;
+  margin-top: 8px;
+}
+
+
+/* Hello, Anonymous! */
+#name-output {
+  width: 248px;
+  height: 32px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  color: #2E2F42;
+  margin-top: 16px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #2E2F42;
+  letter-spacing: 0.04em;
+}
+
+
+/* Task 4 */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 16px;
+  position: relative;
+  width: 408px;
+  height: 256px;
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+
+/* Email Label and Input */
+.login-form label {
+  font-size: 16px;
+  color: #2E2F42;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #2E2F42;
+  box-sizing: border-box;
+  margin-top: 8px;
+}
+
+/* Login Button */
+.login-form button {
+  width: 86px;
+  height: 40px;
+  padding: 8px 16px;
+  background: #4E75FF;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  cursor: pointer;
+  border: none;
+  margin-top: 16px;
+}
+
+.login-form button:hover {
+  background: #365AB3; /* Darker blue on hover */
+}
+
+/* Input Wrappers */
+.login-form .email-group,
+.login-form .password-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+
+
+/* Task 5 */
+.widget {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  gap: 10px;
+}
+
+/* Change color button */
+.change-color {
+  width: 148px;
+  height: 40px;
+  background: #4E75FF;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 10px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px; /* identical to box height, or 150% */
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+
+.change-color:hover {
+  background: #365AB3; /* Example hover effect */
+}
+
+/* Color text */
+.color {
+  font-weight: 600;
+  color: #333;
+}
+
+
+
+/* Task 6 */
+#controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+  gap: 16px;
+  width: 486px;
+  height: 104px;
+  background: #F6F6FE;
+  border-radius: 8px;
+}
+
+#controls input {
+  width: Hug (150px)px;
+  height: Hug (40px)px;
+  padding: 8px 72px 8px 72px;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+}
+
+#controls button {
+  width: 120px;
+  height: 40px;
+  padding: 8px 72px;
+  gap: 10px;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #2E2F42;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#controls button[data-create] {
+  background: #4E75FF;
+  color: #FFFFFF;
+}
+
+#controls button[data-destroy] {
+  background: #FF4E4E;
+  color: #FFFFFF;
+}
+
+#controls button:hover {
+  opacity: 0.8;
+}
+
+/* Boxes Section */
+#boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 16px;
+}
+
+/* Box styles */
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #799CD2; /* Default color */
+  transition: all 0.3s ease;
+}
+
+.box:nth-child(1) {
+  background: #799CD2;
+  width: 30px;
+  height: 30px;
+}
+
+.box:nth-child(2) {
+  background: #8CB9D4;
+  width: 40px;
+  height: 40px;
+}
+
+.box:nth-child(3) {
+  background: #ADE1D1;
+  width: 50px;
+  height: 50px;
+}
+
+.box:nth-child(4) {
+  background: #D1EBDE;
+  width: 60px;
+  height: 60px;
+}
+
+.box:nth-child(5) {
+  background: #8EBFA7;
+  width: 70px;
+  height: 70px;
+}
+
+.box:hover {
+  opacity: 0.8;
+}
